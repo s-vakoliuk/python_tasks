@@ -7,13 +7,13 @@
 виведіть весь список справ"""
 
 def notebook():
-    todo_list = []
+    todo_list: list = []
 
-    def add_todo(new_todo):
+    def add_todo(new_todo: str) -> None:
         nonlocal todo_list
         todo_list.append(new_todo)
 
-    def get_all():
+    def get_all() -> list[str]:
         return todo_list
 
     return (add_todo, get_all)
@@ -22,8 +22,9 @@ add_todo, get_all = notebook()
 
 while True:
     for item in range (5):
-        new_todo = (input("Enter the case in the to-do list: "))
-        add_todo(new_todo)
+        # new_todo = (input("Enter the case in the to-do list: "))
+        # add_todo(new_todo)
+        add_todo((input("Enter the case in the to-do list: ")))
     break
 
 print(get_all())
