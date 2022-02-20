@@ -12,7 +12,6 @@
 
 users_list = [] # порожній список users_list
 
-user = {} # порожня бібліотека user
 while True:
     print("1) додававання нового юзера)")
     print("2) вивід всіх юзерів")
@@ -24,7 +23,9 @@ while True:
     choice = input('Зробіть вибір: ')
 
     if choice == '1':
+        user = {}  # порожня бібліотека user
         print("Введіть дані користувача:")
+
         id = int(input("Введіть свій id: "))
         name = str(input("Введіть своє ім'я: "))
         age = int(input("Введіть свій вік: "))
