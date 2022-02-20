@@ -16,13 +16,14 @@ def notebook():
     def get_all():
         return todo_list
 
-    return {'add_todo': add_todo, 'get_all': get_all}
+    return (add_todo, get_all)
 
 add_todo, get_all = notebook()
 
 while True:
     for item in range (5):
-        add_todo = str(input("Enter the case in the to-do list: "))
+        new_todo = (input("Enter the case in the to-do list: "))
+        add_todo(new_todo)
     break
 
 print(get_all())
