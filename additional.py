@@ -6,23 +6,20 @@ print("Введене число: ", number)
 count=len(number)
 print("Кількість цифр: ", count)
 
-listOfNumbers = list(number) # переведення в список рядків
+listOfNumbers = list(number) # Переведення в список рядків
 print("Список рядків", listOfNumbers)
 
 for item in range(len(listOfNumbers)):
     listOfNumbers[item]=int(listOfNumbers[item])
 print("Список чисел", listOfNumbers)
 
-reverselistOfNumbers=listOfNumbers[::-1]
-print("Зворотній список чисел", reverselistOfNumbers)
+reverselistOfNumbers=listOfNumbers[::-1] # Формуємо зворотній список чисел
 
 result=[]
 for index, value in enumerate(reverselistOfNumbers):
     result.append(value * (10**index))
-
 print("Результат списку чисел", result)
 
-result[::-1] = [str(i) for i in result] # переведення списку чисел в список рядків
-print("Результат списку рядків", result)
+result[::-1] = [str(i) for i in result] # Переведення списку чисел в список рядків
 resultString = "+".join(result)
-print(resultString)
+print("Результат списку рядків", resultString)
