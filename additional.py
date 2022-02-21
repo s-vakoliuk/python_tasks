@@ -40,7 +40,7 @@ def bitnumber (number):
         result.append(value * (10 ** index)) # Кожному елементу масиву множимо на (10 ** index)
 
     result[::-1] = [str(i) for i in result]  # Переведення списку чисел в список рядків
-    resultString = "+".join(result)
-    return print("Результат списку рядків", resultString)
+    resultString = "+".join(result) # З'єднуємо числа знаком "+"
+    return print("Результат рядка", resultString)
 
 bitnumber(327553)
