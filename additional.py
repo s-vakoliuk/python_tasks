@@ -37,7 +37,7 @@ def bitnumber (number):
 
     result = []
     for index, value in enumerate(reverselistOfNumbers):
-        result.append(value * (10 ** index))
+        result.append(value * (10 ** index)) # Кожному елементу масиву множимо на (10 ** index)
 
     result[::-1] = [str(i) for i in result]  # Переведення списку чисел в список рядків
     resultString = "+".join(result)
