@@ -41,6 +41,6 @@ def bitnumber (number):
 
     result[::-1] = [str(i) for i in result]  # Переведення списку чисел в список рядків
     resultString = "+".join(result) # З'єднуємо числа знаком "+"
-    return print("Результат рядка", resultString)
+    return print("Результат рядка: ", resultString)
 
-bitnumber(327553)
+bitnumber(3275)
