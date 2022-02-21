@@ -14,7 +14,7 @@ for item in range(len(listOfNumbers)):
 print("Список чисел", listOfNumbers)
 
 reverselistOfNumbers=listOfNumbers[::-1]
-print("Список чисел", reverselistOfNumbers)
+print("Зворотній список чисел", reverselistOfNumbers)
 
 result=[]
 for index, value in enumerate(reverselistOfNumbers):
