@@ -5,10 +5,10 @@ def bitNumber (number):
     number = str(number)
     listOfNumbers = list(number)  # Переведення в список рядків
 
-    reverselistOfNumbers = listOfNumbers[::-1]  # Формуємо зворотній список чисел
+    reverseListOfNumbers = listOfNumbers[::-1]  # Формуємо зворотній список чисел
 
     result = []
-    for index, value in enumerate(reverselistOfNumbers):
+    for index, value in enumerate(reverseListOfNumbers):
         if index == 0:
            value = value
         else:
