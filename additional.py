@@ -12,7 +12,7 @@ def bitNumber (number):
         if index == 0:
            value = value
         else:
-            count = index + 1
+            count = index
             value = value+("0"*count)
         result.append(value)
 
@@ -20,4 +20,4 @@ def bitNumber (number):
     resultString = "+".join(result) # З'єднуємо елементи списку знаком "+"
     return print("Результат рядка: ", resultString)
 
-bitNumber(3275)
+bitNumber(1001)
