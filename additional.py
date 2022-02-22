@@ -1,21 +1,24 @@
 # Створити функцію котра приймає число і повертає так, як в прикладі.
 # Наприклад: ввели 3275, а виведе "3000 + 200 + 70 +5"
 
-def bitnumber (number):
-    number=str(number)
+def bitNumber (number):
+    number = str(number)
     listOfNumbers = list(number)  # Переведення в список рядків
-
-    for item in range(len(listOfNumbers)):
-        listOfNumbers[item] = int(listOfNumbers[item])
 
     reverselistOfNumbers = listOfNumbers[::-1]  # Формуємо зворотній список чисел
 
     result = []
     for index, value in enumerate(reverselistOfNumbers):
-        result.append(value * (10 ** index)) # Кожному елементу масиву множимо на (10 ** index)
+        count = index + 1
+        if index == 0:
+           value = value
+        else:
+            count = index+1
+            value = value+("0"*count)
+        result.append(value)
 
-    result[::-1] = [str(i) for i in result]  # Переведення списку чисел в список рядків
-    resultString = "+".join(result) # З'єднуємо числа знаком "+"
+    result[::-1] = result
+    resultString = "+".join(result) # З'єднуємо елементи списку знаком "+"
     return print("Результат рядка: ", resultString)
 
-bitnumber(3275)
+bitNumber(3275)
