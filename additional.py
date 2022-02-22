@@ -20,4 +20,4 @@ def bitNumber (number):
     resultString = "+".join(result) # З'єднуємо елементи списку знаком "+"
     return print("Результат рядка: ", resultString)
 
-bitNumber(1001)
+bitNumber(3275)
