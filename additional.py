@@ -9,11 +9,10 @@ def bitNumber (number):
 
     result = []
     for index, value in enumerate(reverselistOfNumbers):
-        count = index + 1
         if index == 0:
            value = value
         else:
-            count = index+1
+            count = index + 1
             value = value+("0"*count)
         result.append(value)
 
